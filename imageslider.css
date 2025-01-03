@@ -1,0 +1,55 @@
+body{
+    background-color:#fae1dd ;
+   
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#800e13 ;
+}
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto ;
+    
+}
+.slider img{
+    
+    width: 50%;
+display: none;
+margin-left: auto;
+margin-right: auto;
+}
+img.displaySlide{
+    display: block;
+    animation: fade 1.5s ;
+}
+.slider button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color:#ff758f ;
+    color:#641220 ;
+    border: none;
+    cursor: pointer;
+padding: 10px 15px;
+}
+button:hover{
+
+    background-color: #f02046;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+
+}
+@keyframes fade{
+    from{opacity: .5;}
+    to{opacity: 1;}
+    
+}
